@@ -18,7 +18,10 @@
   "author": "keshav garg",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"parcel index.html",
+    "build":"parcel build index.html"
+    
   },
   "devDependencies": {
     "parcel": "^2.16.4"
