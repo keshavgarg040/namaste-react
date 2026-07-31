@@ -7,15 +7,19 @@
 }
 import React from "react";
 import ReactDOM from "react-dom/client";
-const Heading=()=>{return<h2>hello all keshav this side </h2>;};
+const num =600;
+const abc= <span>hello everyone</span>;
+
+const Heading=function(){return(<h2>hello all keshav this side </h2>);};
 const HeadingComponent=() => (<div id = "container"><Heading/>  
-<h1 id ="heaading">
-  
+<h1 id ="heaading">{console.log("abcc")}
+  {12+34}{num}
   NAmaste React12 Functionl Component
   </h1></div>);
+const output =(<div>h1{abc}{HeadingComponent()}</div>)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //jsx => transpiled by babel => React.createElement => React Element (js object) =>Html element(render)
 const jsxheading = <h1 className="heaading">Namaste react using jsx gyugyg</h1>;
-console.log(jsxheading);
-root.render(<HeadingComponent/>);
+// console.log(jsxheading);
+root.render(output);
    
