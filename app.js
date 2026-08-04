@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const logo = new URL( "./public/logo.jpg",import.meta.url);
+import logo from "url:./public/logo.jpg";
 
 const Header = ()=>{
   return (<div className="header">
-    <img className="head-logo"src={logo.href} alt="logo" />
+    <img className="head-logo"src={logo} alt="logo" />
   <div className="header-list">
     <ul>
       <li>Home</li>
