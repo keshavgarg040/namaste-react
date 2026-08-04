@@ -1,25 +1,67 @@
-{
-  /* <div id="parent">
-<div id "child">
-<h1>I'm h1 tag</h1>
-</div>
-</div> */
-}
 import React from "react";
 import ReactDOM from "react-dom/client";
-const num =600;
-const abc= <span>hello everyone</span>;
 
-const Heading=function(){return(<h2>hello all keshav this side </h2>);};
-const HeadingComponent=() => (<div id = "container"><Heading/>  
-<h1 id ="heaading">{console.log("abcc")}
-  {12+34}{num}
-  NAmaste React12 Functionl Component
-  </h1></div>);
-const output =(<div>h1{abc}{HeadingComponent()}</div>)
-const root = ReactDOM.createRoot(document.getElementById("root"));
-//jsx => transpiled by babel => React.createElement => React Element (js object) =>Html element(render)
-const jsxheading = <h1 className="heaading">Namaste react using jsx gyugyg</h1>;
-// console.log(jsxheading);
-root.render(output);
-   
+
+const Header = ()=>{
+  return (<div className="header">
+    <img className="head-logo"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-h56HVqZU-9GLH4CWaokhird9_QVnzFA3fOt7IL9cA&s=10" alt="logo" />
+  <div className="header-list">
+    <ul>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+      <li>cart</li>
+    </ul>
+  </div>
+  </div>)
+};
+const syle={
+  backgroundColor:"#f0f0f0"
+}
+const Rescard=()=>{
+  return (<div className="res-card" style={syle}>
+<div className="card-image">
+<img className="logo"src="https://b.zmtcdn.com/data/pictures/2/21756862/a8b4e71ea15bb56ca9120737edfe4d8c_o2_featured_v2.jpg"alt="cardlogo"/>
+</div>
+<h3>Sharma's Cafe</h3>
+<h3>Biryani,North Indian</h3>
+<h3>4.4 stars  </h3>
+<h3>38 minutes</h3>
+</div>
+  );
+};
+const Body =()=>{
+  return(
+    <div className="body-container">
+    <h3 className="search">Search</h3>
+    <div className="card-container">
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+<Rescard/>
+       </div>
+    </div>
+  );
+};
+const App = ()=>{
+  return(
+    <div className="app-container">
+      <Header/>
+      <Body/>
+    </div>
+  )
+}
+const root= ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App/>);  

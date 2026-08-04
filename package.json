@@ -16,7 +16,7 @@
   },
   "license": "ISC",
   "author": "keshav garg",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start":"parcel index.html",
@@ -30,7 +30,7 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
-  "browerslist":[
+  "browserslist":[
     "last 2 versions"]
   
 }
