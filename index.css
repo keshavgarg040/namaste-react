@@ -41,7 +41,13 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
 }
-.filter-btn{
-    cursor: pointer;
-    margin: 10px;
+.shim-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shim-card{
+    height: 400px;
+    width: 200px;
+    margin:20px;
+    background-color: #f0f0f0;
 }
